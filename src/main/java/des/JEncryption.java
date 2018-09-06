@@ -42,7 +42,7 @@ public class JEncryption {
             // Encrypt the text
             byte[] textEncrypted = desCipher.doFinal(text);
 
-            System.out.println("Text Encryted : " + textEncrypted);
+            System.out.println("Text Encrypted : " + textEncrypted);
 
             // Initialize the same cipher for decryption
             desCipher.init(Cipher.DECRYPT_MODE, myDesKey);
@@ -50,7 +50,7 @@ public class JEncryption {
             // Decrypt the text
             byte[] textDecrypted = desCipher.doFinal(textEncrypted);
 
-            System.out.println("Text Decryted : " + new String(textDecrypted));
+            System.out.println("Text Decrypted : " + new String(textDecrypted));
 
         }catch(NoSuchAlgorithmException e){
             e.printStackTrace();
